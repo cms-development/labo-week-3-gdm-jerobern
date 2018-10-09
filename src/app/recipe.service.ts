@@ -11,7 +11,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class RecipeService {
 
-  private recipesUrl = 'https://jerobern.cmsdevelopment.be/wp-json/wp/v2/posts';  // URL to web api
+  private recipesUrl = 'https://jerobern.cmsdevelopment.be/wp-json/wp/v2/recipes';  // URL to web api
 
   constructor(private http: HttpClient, private messageService: MessageService) { }
 

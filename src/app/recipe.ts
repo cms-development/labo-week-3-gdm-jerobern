@@ -7,5 +7,7 @@ export class Recipe {
     rendered: string
   };
   categories: number[];
+  difficulties: number[];
+  allergies: number[];
   featured_media: number;
 }

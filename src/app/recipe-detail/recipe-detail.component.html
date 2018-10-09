@@ -12,9 +12,13 @@
     </div>
 
     <div class="col-md-4">
-      <h3 class="my-3">Ingredients</h3>
+      <h3 class="my-3">Difficulty</h3>
       <ul>
-        <li>meta</li>
+        <li *ngFor="let difficulty of recipe.difficulties">{{ difficulty }}</li>
+      </ul>
+      <h3 class="my-3">Allergies</h3>
+      <ul>
+        <li *ngFor="let allergy of recipe.allergies">{{ allergy }}</li>
       </ul>
     </div>
 
@@ -22,9 +26,7 @@
 
   <!-- Recipe Content -->
   <h3 class="my-4">Instructions</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-    varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu
-    convallis placerat, felis enim.</p>
+  <div [innerHTML]="recipe.content.rendered"></div>
   <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
 
 </div>
