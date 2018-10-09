@@ -1,0 +1,30 @@
+<div *ngIf="recipe">
+
+  <!-- Recipe Heading -->
+  <h1 class="my-4">{{recipe.title.rendered}}
+    <!-- <small></small> -->
+  </h1>
+
+  <!-- Recipe Meta -->
+  <div class="row">
+    <div class="col-md-8">
+      <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+    </div>
+
+    <div class="col-md-4">
+      <h3 class="my-3">Ingredients</h3>
+      <ul>
+        <li>meta</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Recipe Content -->
+  <h3 class="my-4">Instructions</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
+    varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu
+    convallis placerat, felis enim.</p>
+  <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+
+</div>
